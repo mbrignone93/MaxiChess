@@ -51,7 +51,7 @@ class GameSetup extends JDialog {
         myPanel.add(blackHumanButton);
         myPanel.add(blackComputerButton);
 
-        this.searchDepthSpinner = addLabeledSpinner(myPanel, "Dificultad", new SpinnerNumberModel(6, 0, Integer.MAX_VALUE, 1));
+        this.searchDepthSpinner = addLabeledSpinner(myPanel, "Profundidad", new SpinnerNumberModel(6, 0, Integer.MAX_VALUE, 1));
 
         final JButton cancelButton = new JButton("Cancelar");
         final JButton okButton = new JButton("Guardar");
