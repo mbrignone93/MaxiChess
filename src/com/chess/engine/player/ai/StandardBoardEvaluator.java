@@ -41,14 +41,14 @@ public final class StandardBoardEvaluator
 
     public String evaluationDetails(final Board board, final int depth) {
         return
-               ("Mobilidad de Blancas: " + mobility(board.whitePlayer()) + "\n") +
+               ("Movilidad de Blancas: " + mobility(board.whitePlayer()) + "\n") +
                 "Amenazas de Rey Blanco: " + kingThreats(board.whitePlayer(), depth) + "\n" +
                 "Ataques de Blancas: " + attacks(board.whitePlayer()) + "\n" +
                 "Enroque de Blancas: " + castle(board.whitePlayer()) + "\n" +
                 "Evaluacion de Piezas Blancas: " + pieceEvaluations(board.whitePlayer()) + "\n" +
                 "Estructura de Peones Blancos: " + pawnStructure(board.whitePlayer()) + "\n" +
                 "\n" +
-                "Mobilidad de Negras: " + mobility(board.blackPlayer()) + "\n" +
+                "Movilidad de Negras: " + mobility(board.blackPlayer()) + "\n" +
                 "Amenazas de Rey Negro: " + kingThreats(board.blackPlayer(), depth) + "\n" +
                 "Ataques de Negras: " + attacks(board.blackPlayer()) + "\n" +
                 "Enroques de Negras: " + castle(board.blackPlayer()) + "\n" +

@@ -57,10 +57,18 @@ class GameSetup extends JDialog {
         final JButton okButton = new JButton("Guardar");
 
         okButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                whitePlayerType = whiteComputerButton.isSelected() ? PlayerType.COMPUTER : PlayerType.HUMAN;
-                blackPlayerType = blackComputerButton.isSelected() ? PlayerType.COMPUTER : PlayerType.HUMAN;
-                GameSetup.this.setVisible(false);
+			public void actionPerformed(ActionEvent e) {
+                
+				int depthValue = (Integer) searchDepthSpinner.getValue();
+				
+            	if (depthValue >= 1) 
+            	{
+            		whitePlayerType = whiteComputerButton.isSelected() ? PlayerType.COMPUTER : PlayerType.HUMAN;
+                    blackPlayerType = blackComputerButton.isSelected() ? PlayerType.COMPUTER : PlayerType.HUMAN;
+                    GameSetup.this.setVisible(false);
+            	}
+            	else
+            		JOptionPane.showMessageDialog(null, "La Profundidad debe Ser Mayor o Igual a 1", "Error!", JOptionPane.ERROR_MESSAGE, new ImageIcon("assets/icon/icon.png"));
             }
         });
 
