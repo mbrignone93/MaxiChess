@@ -1,5 +1,5 @@
 # MaxiChess
-Motor de Ajedrez en Java 8
+Chess Engine
 
 ![maxichess](https://github.com/mbrignone93/MaxiChess/blob/main/screenshot/1.png)
 
